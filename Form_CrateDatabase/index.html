@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Bases de datos</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Escoge un gestor de base de datos</h1>
+    <div class="iconos">
+          <img src="imgs/icons/mariadb.png" width="75" height="75" alt="">
+          <img src="imgs/icons/postgress.png" width="85" height="85" alt="">
+          <img src="imgs/icons/sqlserver.png" width="95" height="95" alt="">
+          <img src="imgs/icons/oracle.svg" width="95" height="95" alt="">
+          <img src="imgs/icons/mongodb.svg" width="95" height="95" alt="">
+    </div>
+
+   <div class="content-form">
+        
+       
+    <div class="nombre_content">
+        <p>MariaDB
+                <img src="imgs/icons/Mariadb.svg" width="28" height="28" alt="">
+        </p>
+        
+        
+    </div>
+    
+    <div class="form">
+            
+            <form action="">
+                   
+                    <div class="contentido_dentroUno">
+                         <p>
+                       <label for="">Nombre BD</label>
+                       <input type="text" placeholder="Nombre de tu BD">
+                     </p>
+                             <p>
+                                     <label for="">Nombre tabla</label>
+                                     <input type="text" placeholder="Nombre tabla">
+                                   </p>
+                    
+                    
+                     
+                     
+                         </div>
+     
+     
+                     
+                     
+                     
+                     
+                     <div class="contentido_dentroUno">
+                             <p>
+                                     <label for="">Nombre de campo</label>
+                                     <input type="text" placeholder="Nombre campo">
+                                   </p>
+                     <p>
+                       <label for="">Incrementable</label>
+                       <select>
+                               <option disabled="" selected="" hidden="" class="fotecnologia" value="" style="color:gray;">Tipos de datos</option>           
+                                 
+                               
+                               <option value="" selected="">Auto incrementable</option>
+                               <option value="">Normal</option>
+                               
+                               
+                            
+                                         </select>
+                     </p>
+                    
+                     
+                     
+                         </div><div class="contentido_dentro">
+                     <p>
+                       <label for="">Tipo</label>
+                       <select>
+                               <option disabled="" selected="" hidden="" class="fotecnologia" value="" style="color:gray;">Tipos de datos</option>           
+                                 
+                               <option style="color:red; font-size: 1.1rem;" disabled="">Numericos</option>
+                               <option value="">INT</option>
+                               <option value="">FLOAT</option>
+                               <option value="">DOUBLE</option>
+                               <option value="">BIT</option>
+                               <option value="">TINYNT</option>
+                               
+                               <option style="color:red; font-size: 1.1rem;" disabled="">Fecha</option>
+                               <option value="">DATE</option>
+                               <option value="">DATETIME</option>
+                               <option value="">TIME</option>
+                               <option value="">TIMESTAMP</option>
+                               <option value="">YEAR</option>
+                               
+                               <option style="color:red; font-size: 1.1rem;" disabled="">String</option>
+                               <option value="">CHAR</option>
+                               <option value="">VARCHAR</option>
+                               <option value="">TEXT</option>
+                               <option value="">ENUM</option>
+                               <option value="">TINYBLOB</option>
+                               <option value="">BLOB</option>
+                               
+                                         </select>
+                     </p>
+                    
+                     <p>
+                           <label for="">Longitud</label>
+                           <input type="number" min="1" max="100">
+                         </p>
+                     
+                         <p>
+                               <label for="">Indice</label>
+                               <select>
+                                       <option disabled="" selected="" hidden="" class="fotecnologia" value="" style="color:gray;">Indice</option>           
+                                       <option value="">PRIMARY</option>
+                                       <option value="">UNIQUE</option>
+                                       <option value="">INDEX</option>
+                               </select>
+                             </p></div>
+     <div class="contentido_dentroUno">
+                    
+                     <p>
+                           <label for="">Null / Not null</label>
+                           <select>
+                                           
+                                 <option value="">NULL</option>
+                                 <option value="">NOT NULL</option>
+                                 
+                         </select>
+                         </p>     
+     
+                
+                     <p>
+                           <label for="">Agregar otro campo</label>
+                           <button>+</button>
+                         </p>
+                     
+                         </div>
+
+                         <div class="parametros">
+                         <p> 
+
+                                <label><input type="checkbox" id="cbox1" value="first_checkbox"> Este es mi primer checkbox</label><br>
+
+                                <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Este es mi segundo checkbox</label>
+                                
+                            </p>
+                        </div>
+       
+                           
+       
+                     <p class="full-width">
+                       <label for="">Codigo generado</label>
+                       <textarea name="" id="" cols="30" rows="7"></textarea>
+                     </p>
+                     <p class="full-width">
+                       <button>Send</button>
+                        </p>
+                        
+                   </form>
+          </div>
+    </div>
+
+
+</div>
+
+    
+</body>
+</html>
