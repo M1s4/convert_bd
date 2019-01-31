@@ -71,7 +71,7 @@ de fondo o si hay problemas para cargarla */
    border-radius:1px;
    box-sizing: border-box;
    padding: 22px 0px;
-   height: 550px;
+   height: auto;
 }
 
 .nombre_content{
@@ -112,6 +112,17 @@ box-shadow: 0px 7px 9px -2px rgba(0, 43, 100,.58);
 }
 
 
+full-width input, select, button, checkbox {
+  margin: 6px 19px;
+}
+
+  input#clonar {
+    width: 9%;
+    border: 0;
+    background-color: rgba(39, 168, 146, 0.6);
+    border-radius: 1px;
+    padding: 12px 0px;
+}
 
 /*---------------------   */
 
@@ -146,7 +157,6 @@ box-shadow: 0px 7px 9px -2px rgba(0, 43, 100,.58);
  }
  
  input,select{
-   width: 83%;
    border:1px solid transparent;
     border-bottom: 1px solid gray;
  }
@@ -198,6 +208,8 @@ box-shadow: 0px 7px 9px -2px rgba(0, 43, 100,.58);
  .form {
    background: #fff;
    margin: 40px 10px;
+   font-size: 0.9rem;
+    letter-spacing: 0.07rem;
  }
  
  form {
@@ -221,16 +233,63 @@ box-shadow: 0px 7px 9px -2px rgba(0, 43, 100,.58);
  input,
  textarea,
  select {
-   padding: 1em;
+  padding: 8px 5px;
  }
  
  button {
-   width: 100%;
+   width:9%;
    border: 0;
    background-color: rgba(39, 168, 146, 0.6);
    border-radius: 1px; 
+   padding: 12px 0px;
 }
  button:hover, button:focus {
    background: #27A892;
    outline: 0;
  }
+
+ select {
+  background: white;
+  border: 1px solid white;
+  border-bottom: 1px solid gray;
+}
+input[type="number"] {
+  width: 7%;
+}
+input.nombre {
+  width: 85%;
+}
+input.nombretab {
+  width: 85%;
+}
+
+input#clonar:hover {
+  background: #27A892;
+  outline: 0;
+}
+
+input#eliminar {
+  width: 9%;
+  border: 0;
+  background-color: rgba(39, 168, 146, 0.6);
+  border-radius: 1px;
+  padding: 12px 0px;
+  margin: 0 23px;
+}
+
+input#eliminar:hover {
+  background: #27A892;
+  outline: 0;
+}
+div#element {
+  width: 4%;
+  left: 94%;
+  position: absolute;
+  bottom: 88%;
+}
+
+div#element:hover{
+   left:93.8%;
+   
+
+}
