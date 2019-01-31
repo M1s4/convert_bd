@@ -7,6 +7,47 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Bases de datos</title>
     <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+
+
+</style>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function() {
+$(":button(:not('#clonar')").click(function() {
+ 
+
+});
+ 
+$("#clonar").click(function() {
+ 
+$("#origen").clone().appendTo("#destino");
+ 
+});
+ 
+});
+</script>
+
+<script type="text/javascript">
+ 
+    $(document).ready(function() {
+    $(":button(:not('#eliminar')").click(function() {
+     
+     });
+     
+   
+     
+    $("#eliminar").click(function() {
+     
+    $("#origen").remove();
+     
+    });
+     
+    });
+    </script>
+
+
+
 </head>
 <body>
 
@@ -28,141 +69,84 @@
         <p>MariaDB
                 <img src="imgs/icons/Mariadb.svg" width="28" height="28" alt="">
         </p>
-        
-        
-    </div>
+      </div>
+
+      <div id="element" >
+        <div id="close"><a href="#" id="hide"><img src="imgs/icons/cerrar.svg" width="30" height="30" alt=""></a></div>
+     </div>
+    
     
     <div class="form">
             
-            <form action="">
+        <form action="">
                    
-                    <div class="contentido_dentroUno">
-                         <p>
-                       <label for="">Nombre BD</label>
-                       <input type="text" placeholder="Nombre de tu BD">
-                     </p>
-                             <p>
-                                     <label for="">Nombre tabla</label>
-                                     <input type="text" placeholder="Nombre tabla">
-                                   </p>
-                    
-                    
-                     
-                     
-                         </div>
-     
-     
-                     
-                     
-                     
-                     
-                     <div class="contentido_dentroUno">
-                             <p>
-                                     <label for="">Nombre de campo</label>
-                                     <input type="text" placeholder="Nombre campo">
-                                   </p>
-                     <p>
-                       <label for="">Incrementable</label>
-                       <select>
-                               <option disabled="" selected="" hidden="" class="fotecnologia" value="" style="color:gray;">Tipos de datos</option>           
-                                 
-                               
-                               <option value="" selected="">Auto incrementable</option>
-                               <option value="">Normal</option>
-                               
-                               
-                            
-                                         </select>
-                     </p>
-                    
-                     
-                     
-                         </div><div class="contentido_dentro">
-                     <p>
-                       <label for="">Tipo</label>
-                       <select>
-                               <option disabled="" selected="" hidden="" class="fotecnologia" value="" style="color:gray;">Tipos de datos</option>           
-                                 
-                               <option style="color:red; font-size: 1.1rem;" disabled="">Numericos</option>
-                               <option value="">INT</option>
-                               <option value="">FLOAT</option>
-                               <option value="">DOUBLE</option>
-                               <option value="">BIT</option>
-                               <option value="">TINYNT</option>
-                               
-                               <option style="color:red; font-size: 1.1rem;" disabled="">Fecha</option>
-                               <option value="">DATE</option>
-                               <option value="">DATETIME</option>
-                               <option value="">TIME</option>
-                               <option value="">TIMESTAMP</option>
-                               <option value="">YEAR</option>
-                               
-                               <option style="color:red; font-size: 1.1rem;" disabled="">String</option>
-                               <option value="">CHAR</option>
-                               <option value="">VARCHAR</option>
-                               <option value="">TEXT</option>
-                               <option value="">ENUM</option>
-                               <option value="">TINYBLOB</option>
-                               <option value="">BLOB</option>
-                               
-                                         </select>
-                     </p>
-                    
-                     <p>
-                           <label for="">Longitud</label>
-                           <input type="number" min="1" max="100">
-                         </p>
-                     
-                         <p>
-                               <label for="">Indice</label>
-                               <select>
-                                       <option disabled="" selected="" hidden="" class="fotecnologia" value="" style="color:gray;">Indice</option>           
-                                       <option value="">PRIMARY</option>
-                                       <option value="">UNIQUE</option>
-                                       <option value="">INDEX</option>
-                               </select>
-                             </p></div>
-     <div class="contentido_dentroUno">
-                    
-                     <p>
-                           <label for="">Null / Not null</label>
-                           <select>
-                                           
-                                 <option value="">NULL</option>
-                                 <option value="">NOT NULL</option>
-                                 
-                         </select>
-                         </p>     
-     
-                
-                     <p>
-                           <label for="">Agregar otro campo</label>
-                           <button>+</button>
-                         </p>
-                     
-                         </div>
+            <p>
+<label for="">Nombre BD</label>
+<input type="text" placeholder="Nombre de tu BD" class="nombre">
+</p>
+<p>
+    <label for="">Nombre tabla</label>
+    <input type="text" placeholder="Nombre tabla" class="nombretab">
+  </p>
+  
+<p class="full-width" id="origen">
 
-                         <div class="parametros">
-                         <p> 
 
-                                <label><input type="checkbox" id="cbox1" value="first_checkbox"> Este es mi primer checkbox</label><br>
+<input type="text" placeholder="Nombre campo">
+<select>
+<option disabled="" selected="" hidden="" class="fotecnologia" value="" style="color:gray;">Tipos de datos</option>           
 
-                                <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Este es mi segundo checkbox</label>
-                                
-                            </p>
-                        </div>
-       
-                           
-       
-                     <p class="full-width">
-                       <label for="">Codigo generado</label>
-                       <textarea name="" id="" cols="30" rows="7"></textarea>
-                     </p>
-                     <p class="full-width">
-                       <button>Send</button>
-                        </p>
-                        
-                   </form>
+<option style="color:red; font-size: 1.1rem;" disabled="">Numericos</option>
+<option value="">INT</option>
+<option value="">FLOAT</option>
+<option value="">DOUBLE</option>
+<option value="">BIT</option>
+<option value="">TINYNT</option>
+
+<option style="color:red; font-size: 1.1rem;" disabled="">Fecha</option>
+<option value="">DATE</option>
+<option value="">DATETIME</option>
+<option value="">TIME</option>
+<option value="">TIMESTAMP</option>
+<option value="">YEAR</option>
+
+<option style="color:red; font-size: 1.1rem;" disabled="">String</option>
+<option value="">CHAR</option>
+<option value="">VARCHAR</option>
+<option value="">TEXT</option>
+<option value="">ENUM</option>
+<option value="">TINYBLOB</option>
+<option value="">BLOB</option>
+
+        </select>
+<input type="number" min="1" max="100" placeholder="longitud">
+
+
+
+
+<input type="checkbox" id="cbox1" value="first_checkbox">Not null
+<input type="checkbox" id="cbox2" value="second_checkbox">Auto incrementable
+<input type="checkbox" id="cbox2" value="second_checkbox">Primary key
+
+
+</p>
+
+
+<p class="full-width" id="destino">
+  
+</p>
+
+
+
+
+<p class="full-width">
+<button>Enviar</button>
+
+<input type="button" value="clonar" id="clonar">
+<input type="button" value="Eliminar" id="eliminar">
+</p>
+
+</form>
           </div>
     </div>
 
